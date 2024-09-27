@@ -28,4 +28,5 @@ Members:
 # Giao diện đầu tiên của dự án
 ![image](https://github.com/user-attachments/assets/153998a5-e567-4c58-830c-72e1cfbb2e73)
 
-
+# GitHub Pages Dự Án
+https://github.com/Khac-Hai/ktra-giua-ky
