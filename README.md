@@ -48,5 +48,4 @@ Members:
 ![image](https://github.com/user-attachments/assets/90ad2bc4-fa47-42d4-8e45-282fcc81e0fe)
 
 # GitHub Pages Dự Án
-[https://github.com/Khac-Hai/ktra-giua-ky
-](https://github.com/Khac-Hai/ktra-giua-ky/blob/main/README.md)
+https://github.com/Khac-Hai/cuoi-ky/blob/main/README.md
