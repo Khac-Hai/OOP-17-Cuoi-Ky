@@ -26,7 +26,26 @@ Members:
 ![quản lý thông tin khachs hàng](https://github.com/user-attachments/assets/eec7e22c-ec91-472a-a9cf-e427e0aaec5c)
 
 # Giao diện đầu tiên của dự án
-![image](https://github.com/user-attachments/assets/153998a5-e567-4c58-830c-72e1cfbb2e73)
+![image](https://github.com/user-attachments/assets/9be6cb05-4595-4ae8-9744-46bd2ce6cb7d)
+
+# Các dữ liệu trong MySQL
+## Auhour
+![image](https://github.com/user-attachments/assets/2a019948-2bc0-4fc9-a401-609ab8dddbd8)
+
+## User
+![image](https://github.com/user-attachments/assets/bff765f0-3c29-4a82-b1e5-35ba9c8c05a0)
+
+## Book
+![image](https://github.com/user-attachments/assets/1188e6cd-95ae-4a41-ba5d-1805922a250e)
+
+## Borrow
+![image](https://github.com/user-attachments/assets/9531b39c-e99a-4de9-82b0-357f60d32d72)
+
+## Category
+![image](https://github.com/user-attachments/assets/241e99aa-778b-475f-acc6-22b5fc3ed2d4)
+
+## Customer
+![image](https://github.com/user-attachments/assets/90ad2bc4-fa47-42d4-8e45-282fcc81e0fe)
 
 # GitHub Pages Dự Án
 [https://github.com/Khac-Hai/ktra-giua-ky
