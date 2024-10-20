@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="registerPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.RegisterController">
+   <children>
+      <!-- Đặt hình ảnh làm nền -->
+      <ImageView fitHeight="530.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="false">
+         <image>
+            <Image url="@images-5.png" />
+         </image>
+      </ImageView>
+
+      <!-- Tiêu đề -->
+      <Text layoutX="310.0" layoutY="100.0" fill="#0598ff" style="-fx-font-size: 50px;">
+         <font>
+            <Font size="30.0" />
+         </font>
+         Đăng ký
+      </Text>
+
+      <!-- Nhập tên người dùng -->
+      <TextField fx:id="txtUsername" layoutX="260.0" layoutY="150.0" prefHeight="30.0" prefWidth="280.0" promptText="Tên đăng ký" />
+
+      <!-- Nhập mật khẩu -->
+      <PasswordField fx:id="txtPassword" layoutX="260.0" layoutY="200.0" prefHeight="30.0" prefWidth="280.0" promptText="Mật khẩu" />
+
+      <!-- Nhập lại mật khẩu -->
+      <PasswordField fx:id="txtRePassword" layoutX="260.0" layoutY="250.0" prefHeight="30.0" prefWidth="280.0" promptText="Nhập lại mật khẩu" />
+
+      <!-- Nút Đăng ký -->
+      <Button layoutX="260.0" layoutY="300.0" mnemonicParsing="false" onAction="#onSubmit" prefHeight="30.0" prefWidth="280.0" text="Đăng ký" textFill="#0598ff" />
+   </children>
+</AnchorPane>

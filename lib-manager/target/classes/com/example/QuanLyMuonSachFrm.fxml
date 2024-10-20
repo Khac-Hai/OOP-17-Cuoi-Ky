@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="789.0" stylesheets="@../../primer-light.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.CustomerBorrowController">
+    <children>
+        <TableView fx:id="tbDetail" layoutY="110.0" prefHeight="251.0" prefWidth="789.0">
+            <columns>
+                <TableColumn fx:id="colCustomerId" prefWidth="91.0" text="ID khách" />
+                <TableColumn fx:id="colBookId" prefWidth="69.0" text="ID sách" />
+                <TableColumn fx:id="colBookName" prefWidth="131.0" text="Tên sách" />
+                <TableColumn fx:id="colStartDate" prefWidth="119.0" text="Ngày mượn" />
+                <TableColumn fx:id="colEndDate" prefWidth="131.11114501953125" text="Ngày hẹn trả" />
+                <TableColumn fx:id="colReturnDate" prefWidth="131.55560302734375" text="Ngày trả" />
+                <TableColumn fx:id="colStatus" prefWidth="113.7777099609375" text="Trạng thái" />
+            </columns>
+        </TableView>
+        <Button layoutX="343.0" layoutY="379.0" mnemonicParsing="false" onAction="#onClickReturnBook" prefHeight="36.0" prefWidth="102.0" text="Trả sách" />
+        <Label fx:id="lbWelcome" layoutX="120.0" layoutY="23.0" text="DANH SÁCH MƯỢN CỦA KHÁCH HÀNG">
+            <font>
+                <Font name="System Bold" size="31.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

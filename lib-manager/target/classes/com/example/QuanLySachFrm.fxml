@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="918.0" stylesheets="@../../primer-light.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Controller.BookController">
+    <children>
+        <TableView fx:id="tbBook" layoutY="104.0" onMouseClicked="#onSelected" prefHeight="250.0" prefWidth="918.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="65.0" text="ID" />
+                <TableColumn fx:id="colBookName" prefWidth="162.0" text="Tên Sách" />
+                <TableColumn fx:id="colAuthorName" prefWidth="126.0" text="Tác giả" />
+                <TableColumn fx:id="colCategoryName" prefWidth="96.0" text="Thể loại" />
+                <TableColumn fx:id="colPublishDate" prefWidth="146.22222900390625" text="Ngày xuất bản" />
+                <TableColumn fx:id="colQuantity" prefWidth="368.44439697265625" text="Số lượng" />
+            </columns>
+        </TableView>
+        <GridPane layoutX="21.0" layoutY="370.0" prefHeight="128.0" prefWidth="417.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="54.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="221.3333282470703" minWidth="10.0" prefWidth="154.3332977294922" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="113.66668701171872" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="17.0" prefWidth="40.0" text="ID" />
+                <Label prefHeight="17.0" prefWidth="77.0" text="Tên sách" GridPane.rowIndex="1" />
+                <Label prefHeight="17.0" prefWidth="75.0" text="Tác giả" GridPane.rowIndex="2" />
+                <TextField fx:id="txtIdBook" prefHeight="30.0" prefWidth="139.0" GridPane.columnIndex="1" />
+                <TextField fx:id="txtNameBook" prefHeight="30.0" prefWidth="133.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ComboBox fx:id="cbAuthor" prefHeight="36.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <Button fx:id="btnAddAuthor" mnemonicParsing="false" onAction="#onClickAddAuthor" prefHeight="36.0" prefWidth="109.0" text="Thêm tác giả" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Button>
+                <TextField fx:id="txtAuthor" promptText="Điền tác giả mới" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            </children>
+        </GridPane>
+        <GridPane layoutX="438.0" layoutY="370.0" prefHeight="128.0" prefWidth="417.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="10.0" prefWidth="88.3333740234375" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="165.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0" minWidth="10.0" prefWidth="117.66670735677081" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="37.0" minHeight="0.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefHeight="17.0" prefWidth="50.0" text="Thể loại" />
+                <Label prefHeight="17.0" prefWidth="85.0" text="Số lượng" GridPane.rowIndex="2" />
+                <Label prefHeight="20.0" prefWidth="93.0" text="Ngày xuất bản" GridPane.rowIndex="1" />
+                <TextField fx:id="txtQuantity" prefHeight="28.0" prefWidth="148.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                <DatePicker fx:id="dpPublishDate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <ComboBox fx:id="cbCategory" prefHeight="25.0" prefWidth="176.0" GridPane.columnIndex="1" />
+                <Button fx:id="btnAddCategory" mnemonicParsing="false" onAction="#onClickAddCategory" prefHeight="36.0" prefWidth="113.0" text="Thêm thể loại" GridPane.columnIndex="2">
+                    <GridPane.margin>
+                        <Insets left="15.0" />
+                    </GridPane.margin>
+                </Button>
+                <TextField fx:id="txtCategory" promptText="Điền thể loại mới" visible="false" GridPane.columnIndex="1" />
+            </children>
+        </GridPane>
+        <Button fx:id="btnAdd" layoutX="360.0" layoutY="540.0" mnemonicParsing="false" onAction="#onClickAdd" prefWidth="89.0" text="Thêm" />
+        <Button fx:id="btnUpdate" layoutX="577.0" layoutY="540.0" mnemonicParsing="false" onAction="#onClickUpdate" prefHeight="36.0" prefWidth="89.0" text="Sửa" />
+        <Button fx:id="btnDelete" layoutX="129.0" layoutY="540.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="36.0" prefWidth="89.0" text="Xóa" />
+        <Label layoutX="21.0" layoutY="37.0" text="Tìm kiếm :">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSearch" layoutX="106.0" layoutY="32.0" onKeyPressed="#search" prefHeight="25.0" prefWidth="223.0" />
+
+        <Label layoutX="409.0" layoutY="37.0" text="Lọc:">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cbFilter" layoutX="460.0" layoutY="32.0" onAction="#onFilterSelected" prefWidth="150.0" />
+        <RadioButton fx:id="rAuthor" layoutX="653.0" layoutY="8.0" mnemonicParsing="false" onAction="#getListForFilter" text="Lọc theo tác giả">
+            <toggleGroup>
+                <ToggleGroup fx:id="G1" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rCategory" layoutX="653.0" layoutY="39.0" mnemonicParsing="false" onAction="#getListForFilter" text="Lọc theo thể loại" toggleGroup="$G1">
+
+        </RadioButton>
+        <RadioButton fx:id="rNone" layoutX="653.0" layoutY="67.0" mnemonicParsing="false" onAction="#getListForFilter" selected="true" text="Không" toggleGroup="$G1">
+
+        </RadioButton>
+        <Line endX="811.9999389648438" endY="1.52587890625E-5" layoutX="106.0" layoutY="104.0" startX="-106.0" startY="1.52587890625E-5" />
+
+    </children>
+</AnchorPane>
