@@ -27,6 +27,9 @@ Members:
 # Giao diện đầu tiên của dự án
 ![image](https://github.com/user-attachments/assets/9be6cb05-4595-4ae8-9744-46bd2ce6cb7d)
 
+# Giao diện Đăng Ký
+![image](https://github.com/user-attachments/assets/40b072d8-1721-4799-86a5-6812b13ae919)
+
 # Các dữ liệu trong MySQL
 ## Auhour
 ![image](https://github.com/user-attachments/assets/2a019948-2bc0-4fc9-a401-609ab8dddbd8)
@@ -45,6 +48,16 @@ Members:
 
 ## Customer
 ![image](https://github.com/user-attachments/assets/90ad2bc4-fa47-42d4-8e45-282fcc81e0fe)
+
+# Giao diện phần Quản Lý Sách
+![image](https://github.com/user-attachments/assets/ec506a8d-114d-4f59-a56e-a786acb1a076)
+
+# Giao diện phần Quản Lý Mượn Trả
+![image](https://github.com/user-attachments/assets/6342e1e3-2646-4277-bdb5-c11eaa6f0de0)
+
+# Giao diện phần Quản Lý Khách Hàng
+![image](https://github.com/user-attachments/assets/e07ea770-441f-409f-b7cb-4ff196816e54)
+
 
 # GitHub Pages Dự Án
 https://github.com/Khac-Hai/cuoi-ky/blob/main/README.md
