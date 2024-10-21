@@ -8,7 +8,7 @@ Members:
 # Chức Năng Chính
 
 + Thêm, sửa, xóa sách, tìm kiếm sách
-+ quản lý mượn trả sách
++ quản lý mượn trả sách, tìm kiếm
 + Thêm, sửa, xóa, tìm kiếm khách hàng
 
 # UML Dự Án
